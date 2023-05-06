@@ -4,7 +4,6 @@ const ISSUES_ENDPOINT = 'issues';
 
 // Handle HTTP request
 const makeRequest = (method, id, body) => {
-    console.log(JSON.stringify(body));
     let url = `${SERVER_URL}:${SERVER_PORT}/${ISSUES_ENDPOINT}`;
     if (id) {
         url = `${url}/${id}`;
